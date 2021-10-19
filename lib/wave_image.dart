@@ -2,7 +2,6 @@ library wave_image;
 
 import 'package:flutter/material.dart';
 
-
 class WaveImage extends StatefulWidget {
   /// profile or image url (online)
   final String imageUrl;
@@ -27,13 +26,13 @@ class WaveImage extends StatefulWidget {
 
   const WaveImage(
       {Key? key,
-        required this.imageUrl,
-        required this.speed,
-        required this.boarderColor,
-        required this.boarderWidth,
-        required this.imageSize,
-        required this.radius,
-        required this.waveColor})
+      required this.imageUrl,
+      required this.speed,
+      required this.boarderColor,
+      required this.boarderWidth,
+      required this.imageSize,
+      required this.radius,
+      required this.waveColor})
       : super(key: key);
 
   @override
@@ -52,13 +51,14 @@ class _WaveImageState extends State<WaveImage>
       lowerBound: 0.5,
       duration: Duration(milliseconds: widget.speed),
     )..repeat();
+    _controller.repeat();
   }
 
   @override
   Widget build(BuildContext context) {
     return AnimatedBuilder(
       animation:
-      CurvedAnimation(parent: _controller, curve: Curves.fastOutSlowIn),
+          CurvedAnimation(parent: _controller, curve: Curves.fastOutSlowIn),
       builder: (context, child) {
         return Center(
           child: Stack(
@@ -72,11 +72,11 @@ class _WaveImageState extends State<WaveImage>
                   border: Border.all(
                       color: widget.boarderColor, width: widget.boarderWidth),
                   borderRadius:
-                  BorderRadius.all(Radius.circular(widget.imageSize)),
+                      BorderRadius.all(Radius.circular(widget.imageSize)),
                 ),
                 child: ClipRRect(
                   borderRadius:
-                  BorderRadius.all(Radius.circular(widget.imageSize)),
+                      BorderRadius.all(Radius.circular(widget.imageSize)),
                   child: Image.network(
                     widget.imageUrl,
                     fit: BoxFit.fill,
