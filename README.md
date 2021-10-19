@@ -2,7 +2,7 @@
 Wave Image.
 Whit flutter Wave image you can have a simple circular image with wave and some customization.
 
-<img src="https://user-images.githubusercontent.com/26311171/137097350-f4491635-93fa-4008-a8b6-fbb69b29e82a.gif" width="250" />
+<img src="https://user-images.githubusercontent.com/26311171/137913398-115cb8a1-3276-4c64-ad1e-fd851913cba1.mp4" width="250" />
 
 | Property | Description |
 | --- | --- |
