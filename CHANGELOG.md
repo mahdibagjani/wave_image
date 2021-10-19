@@ -9,3 +9,6 @@
 ## [0.0.3] - 19 October 2021.
 
 * add example
+## [0.0.4] - 19 October 2021.
+
+* add video
