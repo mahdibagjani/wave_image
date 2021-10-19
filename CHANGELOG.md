@@ -17,3 +17,6 @@
 ## [0.0.5] - 19 October 2021.
 
 * add example
+## [0.0.6] - 19 October 2021.
+
+* add example
